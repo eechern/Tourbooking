@@ -25,7 +25,7 @@ mongoose.connect(DB).then((con) => {
 
 //use tours scheme for making obejct out of class
 
-// console.log(process.env); used to see what is inside process
+// console.log(process.env); used to see what is inside process.
 const port = process.env.PORT || 3000;
 const server = app.listen(port, () => {
   console.log(`app running on port ${port}`);
