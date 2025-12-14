@@ -7,17 +7,6 @@ const catchAsync = require('../utils/catchAsync');
 exports.getOverview = catchAsync(async (req, res) => {
   const tours = await Tour.find();
 
-  tours.forEach((tour) => {
-    // Format the first start date
-    tour.formattedDate = new Date(tour.startDates[0]).toLocaleString('en-us', {
-      month: 'long',
-      year: 'numeric'
-    });
-
-    // Format rating (if needed)
-    tour.ratingAverage = tour.ratingAverage?.toFixed(1);
-  });
-
   res.status(200).render('overview', {
     title: 'All Tours',
     tours
