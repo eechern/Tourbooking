@@ -1,6 +1,3 @@
-full-stack tour booking application built using node.js, express, mongodb, mongoose 
-by (https://github.com/eechern)
-
 how-to
 1. git clone https://github.com/eechern/Tourbooking.git
 2. npm i
@@ -19,4 +16,3 @@ how-to
 
 --notes/misc--
 1. .env file has been included for your convinence
-2. This project is based on the "Natours" curriculum by Jonas Schmedtmann. While the UI design and CSS assets belong to the course, all backend logic, API architecture, and database integration written by eechern (https://github.com/eechern)
